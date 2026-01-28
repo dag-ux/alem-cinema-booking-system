@@ -1,0 +1,398 @@
+/* Global style */
+body {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding:0;
+  box-sizing:border-box ;
+}
+.home{
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  min-height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("../image/cinema-bg5.jpg") center/cover no-repeat;
+  color: #fff;
+
+}
+.navbar {
+  padding: 15px 0
+}
+.navbar-brand {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white !important;
+  letter-spacing: 1px;
+}
+.container2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.container2 h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+.container3 {
+  max-width: 500px;
+  margin: 40px auto 60px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+
+}
+
+
+.container3 h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.form-label {
+  font-weight: 600;
+  color: black;
+}
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 15px blue;
+
+}
+.container2,
+.container3 {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Glow effect */
+.container2:hover,
+.container3:hover,
+.container3:focus-within {
+  border-color: black;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+
+}
+.btn {
+  width: 100%;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid  black;
+  transition: 1s ease;
+}
+.btn:hover {
+  background:blue;
+  transform: scale(1.03);
+}
+
+
+/* ===============================
+   MOVIES PAGE BACKGROUND
+================================ */
+.home2{
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  min-height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("../image/cinema-bg7.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.navbar2{
+  padding: 15px 0
+}
+.navbar-brand2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white !important;
+  letter-spacing: 1px;
+}
+.text{
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+/* ===============================
+   MOVIE GRID
+================================ */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  padding-bottom: 60px;
+  margin: 10px;
+}
+
+/* ===============================
+   MOVIE CARD
+================================ */
+.movie-card {
+  background: white;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+  transition: all 0.4s ease;
+  margin-bottom: 20px;
+}
+
+/* Hover Effect (same as home page glow) */
+.movie-card:hover {
+  transform: translateY(-10px);
+  border-color:black;
+  box-shadow: 0 0 15px rgb(32, 32, 155);
+
+  
+}
+
+/* ===============================
+   MOVIE IMAGE
+================================ */
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ===============================
+   MOVIE BODY
+================================ */
+.movie-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-body h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.movie-body p {
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.movie-btn {
+  background:rgb(39, 39, 189);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  transition: 0.3s ease;
+}
+
+.movie-btn:hover {
+  background: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px blue;
+
+}
+/* ===============================
+   PAGE BACKGROUND
+================================ */
+.home3 {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("../image/cinema-bg7.jpg") center/cover no-repeat;
+  color: white;
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+/* ===============================
+   SEAT SELECTION CONTAINER
+================================ */
+.screen{
+  text-align: center;
+}
+.seat-selection-container {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* Screen */
+.screen {
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+/* ===============================
+   SEAT GRID
+================================ */
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Seat style */
+.seat {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.seat:hover {
+  background: #0d6efd;
+  box-shadow: 0 0 10px rgba(13,110,253,0.7);
+}
+
+.seat-btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.seat-btn.selected {
+  background-color: blue!important;
+  color: white;
+}
+
+.seat-btn.occupied {
+  background-color: red !important;
+  color: white;
+  cursor: not-allowed;
+}
+
+
+
+/* Confirm button */
+.btn-confirm {
+  background: blue;
+  color: white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 20px;
+  justify-items: center;
+  font-weight: bold;
+  border: 1px solid black;
+  transition: 0.3s ease;
+}
+
+.btn-confirm:hover {
+  background: black;
+  transform: scale(1.03);
+}
+
+
+    .payment-box {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input {
+      background: #333;
+      color: #fff;
+    }
+
+    button {
+      background: blue;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: wheat;
+      color: blue;
+    }
+
+    #seatInfo {
+      background: #333;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 576px) {
+  .seat-grid {
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 10px;
+  }
+
+  .seat-selection-container {
+    padding: 20px;
+  }
+}
+
+
+ 
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .movie-card {
+    height: 380px;
+  }
+
+  .movie-card img {
+    height: 200px;
+  }
+
+
+}
